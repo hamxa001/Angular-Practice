@@ -1,13 +1,10 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { LoginComponent } from './login.component';
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import {InputTextModule} from 'primeng/inputtext';
-import {ButtonModule} from 'primeng/button';
 
 @NgModule({
   declarations: [
@@ -16,12 +13,8 @@ import {ButtonModule} from 'primeng/button';
   ],
   imports: [
     BrowserModule,
-    ReactiveFormsModule,
     FormsModule,
-    AppRoutingModule,
-    NgbModule,
-    InputTextModule,
-    ButtonModule
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
